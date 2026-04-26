@@ -2,7 +2,7 @@ use pyo3::prelude::*;
 
 #[pyfunction]
 fn compute_sum(a: i64, b: i64) -> PyResult<i64> {
-    Ok((a + b))
+    Ok(a + b)
 }
 
 #[pyfunction]
