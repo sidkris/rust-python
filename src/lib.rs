@@ -8,7 +8,7 @@ fn compute_sum(a: i64, b: i64) -> PyResult<i64> {
 
 /// A Python module implemented in Rust.
 #[pymodule]
-fn rust_python(m: &Bound<'_, PyModule>) -> PyResult<()> {
+fn sample_module(m: &Bound<'_, PyModule>) -> PyResult<()> {
     m.add_function(wrap_pyfunction!(compute_sum, m)?)?;
     Ok(())
 }

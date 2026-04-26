@@ -1,4 +1,4 @@
-import rust_python
+import sample_module
 
-sum_ = rust_python.compute_sum(10, 1)
+sum_ = sample_module.compute_sum(10, 1)
 print(sum_)
